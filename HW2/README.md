@@ -24,7 +24,7 @@ In the current `Cmakelist.txt`, only funtction `foo()` is implemented, you shoul
 
 ```bash
 mkdir build && cd build
-cmake -G "Unix Makefiles" ..
+cmake -G "MinGW Makefiles" ..
 make
 ./myprogram
 ```
