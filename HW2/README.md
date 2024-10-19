@@ -1,6 +1,7 @@
 # Homework 2
 
 ---
+***作业不要出现任何形式的中文路径！可能会导致Makefile或者Cmake报错！***
 
 ### Task1 
 
