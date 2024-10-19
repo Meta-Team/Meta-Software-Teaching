@@ -23,7 +23,8 @@ make clean
 In the current `Cmakelist.txt`, only funtction `foo()` is implemented, you should edit `Cmakelist.txt` so that function `bar()` will also complie. After you modify your code, use `cd` command to enter `projectCmake` directory. Execute the following:
 
 ```bash
-mkdir build && cd build
+mkdir build
+cd build
 cmake -G "MinGW Makefiles" ..
 make
 ./myprogram
