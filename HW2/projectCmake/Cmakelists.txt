@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(MyProject)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+set(CMAKE_C_COMPILER gcc)
+set(CMAKE_CXX_COMPILER gcc)
+
+set(SRC src/main.c src/util.c src/bar.c)
+
+add_executable(myProgram ${SRC})
+target_include_directories(myProgram PRIVATE include/)
+target_compile_definitions(myProgram PRIVATE myProgram)
+
+target_compile_options(myProgram PRIVATE
+    -Wall       # Enable warnings
+    -Wextra     # Extra warnings
+    -Werror     # Treat warnings as errors
+)
