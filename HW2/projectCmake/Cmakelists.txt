@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_C_COMPILER gcc)
 set(CMAKE_CXX_COMPILER gcc)
 
-set(SRC src/main.c src/util.c src/bar.c)
+set(SRC src/main.c src/util.c)
 
 add_executable(myProgram ${SRC})
 target_include_directories(myProgram PRIVATE include/)
